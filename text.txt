@@ -1,1 +1,3 @@
 1. Each file in the node are called as module 
+2. Index.js and add.js are each separate file which can run independently even though one of the file meet an error
+3. To combine the module and run the 2 files at once we need require() function on the top of base module (index.js)
