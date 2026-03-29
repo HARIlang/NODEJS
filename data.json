@@ -1,0 +1,51 @@
+{
+  "company": {
+    "name": "TechNova Solutions",
+    "location": "Chennai",
+    "employees": [
+      {
+        "id": 101,
+        "name": "Arun Kumar",
+        "role": "Frontend Developer",
+        "salary": 45000,
+        "isActive": true,
+        "skills": ["HTML", "CSS", "JavaScript", "React"],
+        "projects": [
+          {
+            "projectId": "P001",
+            "title": "E-Commerce Website",
+            "completed": true
+          },
+          {
+            "projectId": "P002",
+            "title": "Portfolio Builder",
+            "completed": false
+          }
+        ],
+        "address": {
+          "city": "Chennai",
+          "pincode": 600001
+        }
+      },
+      {
+        "id": 102,
+        "name": "Priya Sharma",
+        "role": "Backend Developer",
+        "salary": 55000,
+        "isActive": false,
+        "skills": ["Node.js", "Express", "MongoDB"],
+        "projects": [
+          {
+            "projectId": "P003",
+            "title": "API Gateway",
+            "completed": true
+          }
+        ],
+        "address": {
+          "city": "Bangalore",
+          "pincode": 560001
+        }
+      }
+    ]
+  }
+}

@@ -1,4 +1,5 @@
 const add = require('./add.js');
+const data = require('./data.json')
 
 console.log('hello-world');
-const sum = add(1,2,3)
+console.log(data);
