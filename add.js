@@ -1,4 +1,4 @@
-const add = () => {
+const add = () => {                    // each file are the piece of module in node
   const sum = (a, b, c) => {
     return a + b + c;
   };
@@ -11,4 +11,4 @@ const add = () => {
   console.log(sum(a, b, c));
 };
 
-module.exports = add
+module.exports = add               // exporting the file for the proper module merge

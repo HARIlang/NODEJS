@@ -1,4 +1,4 @@
 const add = require('./add.js');
 
 console.log('hello-world');
-add();
+const sum = add(1,2,3)
