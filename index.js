@@ -1,38 +1,16 @@
-const { error } = require('console');
-const fs = require('fs');
+fs  = require('fs');
+const readStream = fs.createReadStream('./file1.txt',{
+
+    encoding:"utf-8",
+    
 
 
-const filecontent = fs.readFileSync('./sample.txt','utf-8');
-console.log(filecontent);
+})
 
-fs.readFile('./sample.txt','utf-8' , (error,data)=>{    // best method while it comes to multiple users
-  if(error){
-  console.log('the error is ' +  error)
-  }
-  else{
-
-    console.log('this is from async callback function'+data);
-  }
-});
+const writeStream = fs.createWriteStream('./file2.txt');
 
 
-// writing file with sync method;
-
-fs.writeFileSync('syncwrite.txt','this is written by sync method');
-
-
-// writing file with async method 
-
-
-fs.writeFile('async.txt','this written by async method',(err)=>{
-
-    if(err){
-        console.log(err)
-    }
-    else{
-        console.log('the file written')
-    }
-});
-
-
-
+readStream.on('data' , (chunk)=>{
+    console.log(chunk);
+    writeStream.write(chunk)
+})
